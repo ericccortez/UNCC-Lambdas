@@ -1,77 +1,101 @@
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f4f4f4;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5f5;
   color: #333;
 }
 
 .hero {
   position: relative;
   height: 100vh;
-  background: url('https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+  background-color: #4b3621; /* Brown background */
+  color: white;
 }
 
 .hero .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0,0,0,0.5);
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 80vh;
   text-align: center;
 }
 
-.hero .overlay h1 {
+.hero h1 {
   font-size: 3em;
-  margin: 0;
+  margin-bottom: 0.5em;
 }
 
-.hero .overlay p {
+.hero p {
   font-size: 1.5em;
 }
 
-nav {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #4B2E83;
+.top-nav {
+  background-color: #4b3621;
+  padding: 15px;
   text-align: center;
 }
 
-nav ul {
+.top-nav ul {
   list-style: none;
+  padding: 0;
   margin: 0;
-  padding: 10px 0;
   display: flex;
   justify-content: center;
+  gap: 30px;
 }
 
-nav ul li {
-  margin: 0 20px;
-}
-
-nav ul li a {
+.top-nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-section {
-  padding: 60px 20px;
+.middle-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.btn {
+  padding: 15px 25px;
+  background-color: #4b3621;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.numbers {
   text-align: center;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+.about {
+  text-align: center;
+  padding: 40px;
+  background-color: #fff;
 }
 
 footer {
-  background-color: #4B2E83;
+  background-color: #4b3621;
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+footer .socials {
+  margin-bottom: 15px;
+}
+
+footer .center-logo img {
+  height: 100px;
+}
+
+footer .footer-info {
+  margin-top: 15px;
 }
